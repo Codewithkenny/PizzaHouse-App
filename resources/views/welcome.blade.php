@@ -25,14 +25,10 @@
         </div>
 
         <div class="links">
-            {{-- <a href="https://laravel.com/docs">Docs</a> --}}
-            {{-- <a href="https://laracasts.com">Laracasts</a> --}}
-            {{-- <a href="https://laravel-news.com">News</a> --}}
-            {{-- <a href="https://blog.laravel.com">Blog</a> --}}
-            {{-- <a href="https://nova.laravel.com">Nova</a> --}}
-            <a href="#">Order</a>
-            <a href="#">Menu</a>
-            <a href="#">Contact Us</a>
+           
+            <a href="/order">Order</a>
+            <a href="/menu">Menu</a>
+            <a href="/contact">Contact Us</a>
         </div>
     </div>
 </div>

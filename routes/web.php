@@ -13,17 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Pizza Routes 
-Route::get('/pizzas', [pizzaController::class, 'index']);
-// get data from db
-  
-Route::get('/pizzas/{id}', [pizzaController::class, 'show']);
+// Pages  Routes 
+Route::get('/order', [PagesController::class, 'order']);
+Route::get('/menu', [PagesController::class, 'menu']);
+Route::get('/contact', [PagesController::class, 'contact']);
 
   
 
 
 
-
+// Pizza Routes
  Route::get('/', function() {
    return view('welcome');
  });
@@ -38,4 +37,7 @@ Route::get('/pizzas/{id}', [pizzaController::class, 'show']);
  Route::get('/contact', function () {
     return view('pages.contact');
  });
-     
+      
+
+
+ Route::get('/pizzas', [pizzaController::class, 'pizzas']);

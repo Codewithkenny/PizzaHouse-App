@@ -12,4 +12,14 @@ class PagesController extends Controller
     public function menu() {
         return view('pages.menu');
     }
+    public function order() {
+        return view('pages.order');
+    }
+    public function contact() {
+        $data = array(
+            'title' =>'Contact'
+            
+        );
+        return view('pages.contact')->with($data);
+    }
 }

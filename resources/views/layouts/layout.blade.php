@@ -8,11 +8,15 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
       <link rel="stylesheet" href="/css/styles.css">
         </head>
     <body>
-        @yield('content')
+        @include('inc.navbar')
+        <div class="container">
+             @yield('content')
+        </div>
+
+    
 
         <footer>
             Copyright 2023 Pizza House
